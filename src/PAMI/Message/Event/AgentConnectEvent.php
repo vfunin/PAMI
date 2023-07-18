@@ -126,6 +126,16 @@ class AgentConnectEvent extends EventMessage
     }
 
     /**
+     * Returns key: 'ConnectedLineNum'.
+     *
+     * @return string
+     */
+    public function getConnectedLineNum()
+    {
+        return $this->getKey('ConnectedLineNum');
+    }
+
+    /**
      * Returns key: 'Channel'.
      *
      * @return string
